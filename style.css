@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #005f73;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+*{
+    font-size: 26px;
+    margin: 4px;
+    padding: 4px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;}
+    
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  background-image: url("title2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 84vh;              /* Full screen */
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  background: #005f73;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hero button:hover {
+  background: #003845;
+}
+
+/* Sections */
+.content-section {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.content-section h2 {
+    font-size: 28px;
+  margin-bottom: 20px;
+  color: #d72f42;
+}
+
+.gray {
+  background: #f4f4f4;
+}
+
+/* Services */
+.services-list {
+  list-style: none;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.services-list li {
+    background: white;
+    padding: 20px;
+    border-left: 26px solid #0a9396;
+}
+
+/* Contact Form */
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 12px;
+  border: none;
+  background: #0a9396;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+form button:hover {
+  background: #005f73;
+}
+
+/* Footer */
+footer {
+    
+  background: #005f73;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shalini Health Services</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Shalini Health Services</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Smart & Accurate Diagnostic Imaging</h2>
+    <p>Your one-stop solution for high‑quality diagnostic imaging reporting</p>
+    <button onclick="scrollToSection('contact')">Get in Touch</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="content-section">
+    <h2>About Us</h2>
+    <p>
+      Shalini Health Services (SHS) provides state‑of‑the‑art diagnostic imaging
+      reporting with high accuracy and quick turnaround time.
+    </p>
+
+    <h3>Founder</h3>
+    <p>
+      <strong>Dr. Ashish Gandhe</strong> – Board‑Certified Radiologist with over
+      19 years of experience in Neuro Radiology, Musculoskeletal MRI, and
+      Abdominal Imaging.
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="content-section gray">
+    <h2>Our Services</h2>
+    <ul class="services-list">
+      <li>MRI Reporting</li>
+      <li>CT Scan Reporting</li>
+      <li>Ultrasound</li>
+      <li>X‑Ray</li>
+      <li>PET‑CT</li>
+      <li>DEXA & Nuclear Medicine</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="content-section">
+    <h2>Contact Us</h2>
+    <p><strong>Address:</strong> 11212 Malaguena Lane, Albuquerque, NM</p>
+    <p><strong>Phone:</strong> 614‑390‑3609</p>
+    <p><strong>Email:</strong> SHSimaging@outlook.com</p>
+
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Shalini Health Services. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
