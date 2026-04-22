@@ -27,7 +27,7 @@ header nav a {
   font-weight: bold;
 }
 *{
-    font-size: 26px;
+    font-size: 20px;
     margin: 4px;
     padding: 4px;
     box-sizing: border-box;
@@ -73,7 +73,7 @@ header nav a:hover {
   margin: auto;
 }
 
-.content-section h2 {
+.content-section h2 p2 {
     font-size: 28px;
   margin-bottom: 20px;
   color: #d72f42;
@@ -133,4 +133,39 @@ footer {
   text-align: center;
   padding: 15px;
   margin-top: 30px;
+}
+
+
+
+.slider {
+  width: 100%;
+  max-width: 600px; /* Adjust this to your desired width */
+  overflow: hidden;
+  margin: auto;
+}
+
+.slides {
+  display: flex;
+  animation: slide 9s infinite; /* Adjust the duration here */
+}
+
+.slides img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-100%);
+  }
+  66% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
