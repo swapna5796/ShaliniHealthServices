@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shalini Health Services</title>
+  <style>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #005f73;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+*{
+    font-size: 20px;
+    margin: 4px;
+    padding: 4px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;}
+    
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  background-image: url("title2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 84vh;              /* Full screen */
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  background: #005f73;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hero button:hover {
+  background: #003845;
+}
+
+/* Sections */
+.content-section {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.content-section h2 p2 {
+    font-size: 28px;
+  margin-bottom: 20px;
+  color: #d72f42;
+}
+
+.gray {
+  background: #f4f4f4;
+}
+
+/* Services */
+.services-list {
+  list-style: none;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.services-list li {
+    background: white;
+    padding: 20px;
+    border-left: 26px solid #0a9396;
+}
+
+/* Contact Form */
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 12px;
+  border: none;
+  background: #0a9396;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+form button:hover {
+  background: #005f73;
+}
+
+/* Footer */
+footer {
+    
+  background: #005f73;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+</style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Shalini Health Services</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services1">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+  
+</section>
+
+  <!-- About Section -->
+  <section id="about" class="content-section">
+    <h2><p2>About Us</p2></h2>
+    <p>
+      Shalini Health Services (SHS) provides state‑of‑the‑art diagnostic imaging
+      reporting with high accuracy and quick turnaround time.
+    </p>
+
+    <h3>Founder</h3>
+    <p>
+      <strong>Dr. Ashish Gandhe</strong> – Board‑Certified Radiologist with over
+      19 years of experience in Neuro Radiology, Musculoskeletal MRI, and
+      Abdominal Imaging.
+    
+    Ashish Gandhe - Founder, Board Certified Radiologist
+With over 19 years of experience, Dr Gandhe, is a Super Specialist with Fellowship training in Neuro Radiology,
+Musculoskeletal MRI, and Abdominal Imaging from Thomas Jefferson University Hospital, Philadelphia, PA.
+Dr. Gandhe is expert in facets of diagnostic imaging and incorporates smart and customized protocols developed by his
+years of experience in Diagnostic Radiology. Dr. Gandhe’s expertise is sought after globally and has been invited as a
+speaker to various internal conferences. He has appointment as an editor and reviewer for International Journals.
+Dr. Gandhe is expert in utilization management services making most of the smart AI technology for prior authorization
+of imaging.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services1" class="content-section gray">
+    <h2><p2>Our Health Services</p2></h2>
+    <ul class="services-list">
+      <li>MRI Reporting</li>
+      <li>CT Scan Reporting</li>
+      <li>Ultrasound</li>
+      <li>X‑Ray</li>
+      <li>PET‑CT</li>
+      <li>DEXA & Nuclear Medicine</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="content-section">
+    <h2><p2>Contact Us</p2></h2>
+    <p><strong>Address:</strong> 11212 Malaguena Lane, Albuquerque, NM</p>
+    <p><strong>Phone:</strong> 614‑390‑3609</p>
+    <p><strong>Email:</strong> SHSimaging@outlook.com</p>
+
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Shalini Health Services. All rights reserved.</p>
+  </footer>
+
+  <script >
+    function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({
+    behavior: "smooth"
+  });
+}
+
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  alert("Thank you! Your message has been sent.");
+  this.reset();
+});
+  </script>
+</body>
+
+</html>
